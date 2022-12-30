@@ -104,10 +104,10 @@ app.post("/addStudent", async function (req, res) {
     "Request received to add student. Req body: " + JSON.stringify(reqBody)
   );
   let data = await addStudent(
+    reqBody.id,
     reqBody.name,
     reqBody.age,
-    reqBody.hometown,
-    reqBody.id
+    reqBody.hometown
   );
 
   res.setHeader("Content-Type", "application/json");
