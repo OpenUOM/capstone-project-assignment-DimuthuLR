@@ -21,7 +21,7 @@ export class EditTeacherComponent implements OnInit {
     this.getTeacherData();
   }
 
-  getTeacherData(): void{
+  getTeacherData(){
     let teacher = {
       id : this.navigation.extras.state.id
     }
